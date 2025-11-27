@@ -41,7 +41,6 @@ p{color:var(--muted);line-height:1.55;margin:0 0 10px}
 ul.clean{margin:10px 0 0 0;padding:0;list-style:none}
 ul.clean li{display:flex;gap:8px;align-items:flex-start;margin:8px 0}
 
-/* Phone walkthrough */
 .phone{position:relative;margin:0 auto;width:312px;max-width:100%;aspect-ratio:9/19;border-radius:20px;padding:6px;background:linear-gradient(180deg,#0d0f14,#0a0c11);border:1px solid var(--line);box-shadow:0 18px 50px rgba(0,0,0,.35)}
 .screen{position:absolute;inset:6px;border-radius:16px;overflow:hidden;background:#0a0f16;display:grid}
 .stage{position:absolute;inset:0;display:grid;place-items:center;opacity:0;transform:translateY(8px) scale(.985);transition:opacity .42s ease,transform .42s ease}
@@ -78,12 +77,10 @@ ul.clean li{display:flex;gap:8px;align-items:flex-start;margin:8px 0}
 .gauge::after{content:"";position:absolute;inset:12%;background:#0b0f16;border-radius:50%}
 .price{position:absolute;font-weight:900;font-size:22px}
 
-/* Progress */
 .progress{height:6px;border-radius:999px;background:#0d1117;border:1px solid var(--line);overflow:hidden;margin:14px 0 6px}
 .bar{height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:width .25s}
 .label{font-size:12px;color:#cfe7ff;text-align:center;margin-top:6px}
 
-/* Page 2 / form */
 .page2{scroll-margin-top:70px}
 .hidden{display:none}
 .formCard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
@@ -107,7 +104,6 @@ input[type=range]::-moz-range-track{background:transparent}
 .badge{padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--pill);cursor:pointer;font-weight:700}
 .warn{color:#b45309}
 
-/* Partner sheet */
 .sheet{position:fixed;left:50%;bottom:12px;transform:translateX(-50%) translateY(120%);z-index:120;background:var(--card);border:1px solid var(--line);border-radius:16px;max-width:820px;width:calc(100vw - 24px);box-shadow:0 16px 40px rgba(0,0,0,.4);transition:transform .35s ease}
 .sheet.open{transform:translateX(-50%) translateY(0)}
 .sheetHead{display:flex;align-items:center;justify-content:space-between;padding:12px;border-bottom:1px solid var(--line)}
@@ -118,7 +114,6 @@ input[type=range]::-moz-range-track{background:transparent}
 .linkRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
 .linkRow a{text-decoration:none;border:1px solid var(--line);padding:6px 10px;border-radius:8px;background:var(--pill);color:var(--text);font-weight:700}
 
-/* Chat + crash */
 .chatFab{position:fixed;right:16px;bottom:16px;z-index:80;width:64px;height:64px;border-radius:50%;background:var(--accent2);color:#053a16;border:none;font-weight:900;display:grid;place-items:center;cursor:pointer;box-shadow:0 10px 26px rgba(0,0,0,.35)}
 .chatPanel{position:fixed;right:16px;bottom:92px;width:min(600px,calc(100vw - 32px));max-height:88vh;display:none;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;z-index:85}
 .chatPanel.open{display:flex}
@@ -143,8 +138,8 @@ input[type=range]::-moz-range-track{background:transparent}
 </style>
 </head>
 <body>
-<!-- Intro -->
-<div id="splash" class="splash" role="dialog" aria-label="EcoVision intro">
+
+  <div id="splash" class="splash" role="dialog" aria-label="EcoVision intro">
   <div class="word" aria-hidden="true">
     <span class="letter">E</span>
     <span class="letter">c</span>
@@ -158,7 +153,6 @@ input[type=range]::-moz-range-track{background:transparent}
   </div>
 </div>
 
-<!-- Logo defs -->
 <svg width="0" height="0" style="position:absolute">
   <defs>
     <linearGradient id="leafCore" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#22C55E"/><stop offset="100%" stop-color="#16A34A"/></linearGradient>
@@ -184,7 +178,6 @@ input[type=range]::-moz-range-track{background:transparent}
 </header>
 
 <main class="wrap">
-  <!-- Page 1 -->
   <section id="page1" class="card">
     <div class="grid">
       <div>
@@ -342,7 +335,7 @@ input[type=range]::-moz-range-track{background:transparent}
         <h3 style="margin-top:0">Result</h3>
         <div class="row" style="margin-bottom:8px">
           <span class="pill">📱 <b>Cracked screen detected</b></span>
-          <span class="pill">💰 <b>Approx value: ₹23,200</b></span>
+          <span class="pill">💰 <b>Approx value: ₹23,200 (Demo value)</b></span>
         </div>
         <div id="savedPath" class="small" style="margin-top:8px"></div>
         <div id="datasetLinks" class="linkRow"></div>
@@ -384,7 +377,6 @@ input[type=range]::-moz-range-track{background:transparent}
   </section>
 </main>
 
-<!-- Partner contact sheet -->
 <section id="sheet" class="sheet" aria-label="Partner contact and script">
   <div class="sheetHead">
     <div style="font-weight:900" id="sheetTitle">Partner</div>
